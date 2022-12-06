@@ -1,0 +1,40 @@
+h1{
+    color: orange;
+    text-decoration: underline;
+    font-size: 48px;
+}
+a{
+    color: blue;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: red;
+    text-shadow: 2px 2px #888888;
+}
+p{
+    font-family: Helvetica;
+    font-size: 18px;
+}
+.lastone{
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: bold;
+}
+form{
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    color: orangered;
+    text-transform: uppercase;
+    font-style: italic;
+}
+footer{
+    text-align: right;
+    font-size: 8px;
+    color:gray;
+    font-style: italic;
+}
