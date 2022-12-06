@@ -1,0 +1,20 @@
+html{
+    font-size: 16px;
+}
+h1{
+    color:rgb(255, 0, 0);
+    font-size: 32px;
+    text-shadow: 4px 4px #00f;
+}
+p{
+    color: blue;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;   
+
+}
+span{
+    /*font size: 2em; */
+    font-size: 2em;
+    text-decoration: underline wavy;
+}
