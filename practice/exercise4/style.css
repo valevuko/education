@@ -1,2 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Prata&display=swap');
+body{
+    background-color: black;
+    font-family: 'Prata';
+    color:rgb(170, 170, 170);
+}
+.ime{
+    font-size: 18px;
+    text-align: left;
+}
+a{
+    font-size: 18px;
+    color:rgb(170, 170, 170);
+    float: center;
+}
+.button{
+    background-color: rgb(255, 217, 0);
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    width: 150px;
+    height: 50px;
+    float:right;
+}
+h1{
+    font-family: 'Inter';
+
+}
+.one{
+    font-size: 14px;
+}
+
+h2{
+    font-family: 'Inter';
+
+}
 
