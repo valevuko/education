@@ -1,0 +1,26 @@
+h1, h2, h3{
+    color: #317042;  
+}
+h1{
+    font-size: 48px;
+}
+main>section>p{
+    color: darkolivegreen;
+}
+main>span{
+    font-weight: bold;
+    color:rgb(31, 64, 40);
+}
+section>p{
+    font-size: 18px;
+}
+li{
+    background-color: goldenrod;
+}
+section>img{
+    border: 3px solid black
+}
+section#legenda{
+    background-color: #9fd4ad;
+}
+
