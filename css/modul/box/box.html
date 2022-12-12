@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        div{
+            background-color: aquamarine;
+        }
+        .div2{
+            padding: 8px;
+            /**ako definiramo samo jedan padding onda se on primjenjuje i na gore, dolje, lijevo desno, a možemo zasebno specificirati svaki: padding: 8px 8px 0px 8px*
+            najčešće su sve 4 vrijednosti identične*/
+            border-width: 1px;
+            border-style: dashed;
+            border-color: black; /**border se prikazuje van paddinga - obrubljuje ga, korisnimo ga za fokus na element, možemo napisati i border: 1px dashed black*/
+            margin: 8px; /** */
+        }
+        .div3{
+            width: 200px;
+            height: 100px;
+            /**drugačije se ponašaju block elementi od inline elemenata */
+            padding: 8px; /**sadržaj neće ići od gore, dolje i lijevo i desno od 8px, veličina elementa se povećava - on utječe na veličinu elementa*/
+            border: 5px solid black; /**dodaje još sa svake strane pixele*/
+            margin: 8px; /**margina samo služi udaljavanju elementa od drugog elementa*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        Sadržaj DIV-a.
+    </div>
+    <hr>
+    <div class="div2">
+        Sadržaj DIV-a.
+    </div>
+    <hr>
+    <div class="div3">
+        Sadržaj DIV-a.
+    </div>
+</body>
+</html>
