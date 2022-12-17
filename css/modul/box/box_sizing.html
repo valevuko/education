@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box sizing</title>
     <style>
-        div{
+        div:first-of-type {
+            box-sizing: content-box;
+            /*po defaultu je namješten na contetn box*/
             background-color: aqua;
-            width: 600px;
-            height: 400px;
-            padding: 10px; /**kad dodamo padding povećava se vrijednost box-a tj: 620 + 420*/
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            /**kad dodamo padding povećava se vrijednost box-a tj: 620 + 420*/
+            border: 5px solid black;
         }
 
+        div:last-of-type {
+            box-sizing: border-box;
+            /*box se smanjio na ono što je postavljeno sa width i height*/
+            background-color: aqua;
+            width: 300px;
+            height: 200px; /*ako maknemo ovo sadžaj definira veličinu box-a*/
+            padding: 16px;
+            /**kad dodamo padding povećava se vrijednost box-a tj: 620 + 420*/
+            /*odmicanje sadržaja od gornjeg ruba*/
+            border: 5px solid black;
+        }
     </style>
 </head>
 <body>
     <div>Valentina</div>
+    <hr>
+    <div>Tina</div>
 </body>
 </html>

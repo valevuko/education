@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .box1{
+            background-color: cadetblue;
+        }
+        .box2{
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Teorija:
+        - display:block/inline/inline-block/none; elemeniti mogu biti razmješteni kao normal flow,
+        a možemo utjecati sa css-om pozition-->
+    <!--pozition svojstva: 
+        static -defaultno stanje elementa, naći će se tamo gdje bi ga browser stavio; 
+        relative - sa svojstvima lef, top, bottom i right definiramo gdje će biti, ako ne definiramo ponašat će se kao static;
+        absolute - pozicioniran u odnosu na najbližeg pozicioniranog pretka (umjesto pozicioniran u odnosu na okvir za prikaz, kao fiksni)
+                 - ako apsolutno pozicionirani element nema pozicionirane pretke, on koristi tijelo dokumenta i pomiče se zajedno s pomicanjem stranice
+                 - Apsolutno pozicionirani elementi uklonjeni su iz normalnog toka i mogu se preklapati
+        fix - pozicionira element relativno na širinu i visinu prozora, ispada iz toga dokumenta, ne gleda gdje se nalazi 
+        u usporedbis parent i child elementima;
+-->
+    <div class="box1">Valentina</div>
+    <div class="box2">Tina</div>
+    <p> Nije bilo nikakvog positiona.</p>
+</body>
+
+</html>
