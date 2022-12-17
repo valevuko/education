@@ -10,7 +10,7 @@
         body{
             margin: 0;
             color: black;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 16px;
         }
         div{
@@ -18,61 +18,56 @@
             text-align: justify;
             
         }
-        .div1{
-            padding: 16px;
-            border: solid rgb(36, 35, 35);
-            border-width: 2px;
+        div:nth-of-type(1){
+            padding: 20px;
+            border:3px solid grey;
+            margin-top: 30px;
+            margin-left:auto;
+            margin-right: auto;
+            /*width:auto;
+            height:auto;*/
+            width: 300px;        
+        }
+        div:nth-of-type(2){
+            padding: 15px 35px;
+            border: 3px dashed grey;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: auto;
+            width: 250px;
+        }
+        div:nth-of-type(3){
+            padding: 0 10px 20px 30px;
+            border-right: 5px double gray;
+            width: 500px;
+        }
+        div:nth-of-type(4){
+            padding: 10px;
+            margin-bottom: 0;
+            border-top: 5px dashed gray;
+            border-bottom: 5px dotted black;
+            width: 80%;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 30px; /**udaljavamo se od gornjeg ruba ekrana*/
-            width: 200px; /**bolje je postaviti širinu*/
-            /**height: 280px;* visinu ako postavljamo može se dogoditi prelamanje tekst, bolje je samo širinu postaviti*/
-        }
-        .div2{
-            border: dashed black;
-            border-width: 2px;
-            padding: 8px;
-            margin: 16px 200px 16px 1460px;
-            width: 350px;
-            /**height: 150px;*/
-        }
-        .div3{
-            border-right: double grey;
-            border-width: 2px;
-            padding: 8px;
-            margin: 16px 10px 16px 10px;
-            width: 400px;
-            /**height: 130px;*/
-        }
-        .div4{
-            border: dashed black;
-            border-width: 2px;
-            padding: 8px;
-            margin: auto;
-            width: 1700px;
-            /**height: 40px;*/
         }
     </style>
-
 </head>
-
 <body>
-    <div class="div1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ad ab fugiat consequatur hic sint quaerat
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ad ab fugiat consequatur hic sint quaerat
         nemo natus praesentium, veniam illum minima eveniet vitae culpa fuga odit suscipit doloremque amet et, laborum,
         molestiae optio. Odit labore hic aperiam dolore esse mollitia. Praesentium atque, non alias a totam quo dolorum
         quas.</div>
-    <div class="div2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ad ab fugiat consequatur hic sint quaerat
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ad ab fugiat consequatur hic sint quaerat
         nemo natus praesentium, veniam illum minima eveniet vitae culpa fuga odit suscipit doloremque amet et, laborum,
         molestiae optio. Odit labore hic aperiam dolore esse mollitia. Praesentium atque, non alias a totam quo dolorum
         quas.</div>
-     <div class="div3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ad ab fugiat consequatur hic sint quaerat
+     <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ad ab fugiat consequatur hic sint quaerat
         nemo natus praesentium, veniam illum minima eveniet vitae culpa fuga odit suscipit doloremque amet et, laborum,
         molestiae optio. Odit labore hic aperiam dolore esse mollitia. Praesentium atque, non alias a totam quo dolorum
         quas.</div>
-    <div class="div4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ad ab fugiat consequatur hic sint quaerat
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ad ab fugiat consequatur hic sint quaerat
         nemo natus praesentium, veniam illum minima eveniet vitae culpa fuga odit suscipit doloremque amet et, laborum,
         molestiae optio. Odit labore hic aperiam dolore esse mollitia. Praesentium atque, non alias a totam quo dolorum
         quas.</div>
 </body>
-
 </html>
