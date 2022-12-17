@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .container>*{ /**ako stavimo zvjezdicu * onda su uključena sva djeca div-a koji ima selektor container*/
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            /*display: inline-block; prikazat će se u istom redu ali možemo i sa svojstvom flex no moramo kreirati svojstvo flex container*/
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!--flex container-->
+        <div></div> <!--flex item-->
+        <div></div> <!--flex item-->
+        <div></div> <!--flex item-->
+        <div></div> <!--flex item-->
+    </div>
+</body>
+</html>
