@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacije</title>
+    <style>
+		body {
+			box-sizing: border-box;
+			font-size: 28px;
+		}
+		* {
+			box-sizing: inherit;
+		}
+		div {
+			border: 3px solid black;
+			border-radius: 50%;
+			background-color: orange;
+			width: 150px;
+			height: 150px;
+			
+			/* centriranje sadržaja */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 48px 0;
+			/* margin: 150px; */ /* udaljavamo element od ostalig elemenata gore-desno-dolje-lijevo */
+			/* padding: 50px;
+			width: fit-content; */
+		}
+		@keyframes animacija1 {
+			0% {
+			}
+			100% {
+				background-color: yellow;
+				transform: translateX(700px);
+			}
+		}
+		div:nth-of-type(1) {
+			animation: animacija1 1.5s linear;
+		}
+		@keyframes animacija2 {
+			0% {
+				left: 0;
+			}
+			50% {
+				transform: rotate(180deg);
+				left: 700px;
+			}
+			100% {
+				transform: rotate(0deg);
+				left: 0;
+			}
+		}
+		div:nth-of-type(2) {
+			position: relative;
+			animation: animacija2 2s ease-in-out;
+		}
+        @keyframes animacija3{
+            0% {
+				left: 0;
+			}
+			50% {
+				transform: rotate(360deg);
+				left: 700px;
+			}
+			100% {
+				transform: rotate(0deg);
+				left: 0;
+			}
+        }
+        div:nth-of-type(3){
+            position: relative;
+            animation: animacija3 2s ease-in-out 2s;
+        }
+        @keyframes animacija4 {
+            0% {
+				left: 0;
+			}
+            /**50% {
+				left: 70%;          
+            }*/
+            100%{
+                left: 80%;
+            }
+        }
+        div:nth-of-type(4){
+            position: relative;
+            animation: animacija4 3s ease-in-out 0s infinite alternate;
+
+        }
+        @keyframes animacija5 {
+            0% {
+				left: 0;
+			}
+            50% {
+				left: 90%;            
+            }
+            100%{
+                left: 0;
+            }          
+        }
+        div:nth-of-type(5){
+            position: relative;
+            animation: animacija5 5s ease-in 0s 2;
+        }
+        @keyframes animacija6 {
+            0%{
+                background-color: red;
+                left: 0;
+            }
+            100%{
+                left: 80%;
+            }
+        }
+        div:nth-of-type(6){
+        position: relative;
+        animation: animacija6 4s ease-in 2s;
+        animation-fill-mode: backwards;
+            
+        }
+        @keyframes animacija7 {
+            0%{
+                left: 0;
+            }
+            100%{
+                left: 80%;
+            }
+        }
+        div:nth-of-type(6){
+        position: relative;
+        animation: animacija7 4s ease-in-out infinite alternate;         
+        }
+        div:nth-of-type(7):hover{
+            animation-play-state: paused;
+        }
+	</style> 
+</head>
+<body>
+    <div>1</div> <!-- flex container-->
+    <div>2</div> <!-- flex container-->
+    <div>3</div> <!-- flex container-->
+    <div>4</div> <!-- flex container-->
+    <div>5</div> <!-- flex container-->
+    <div>6</div> <!-- flex container-->
+    <div>7</div> <!-- flex container-->
+
+</body>
+</html>
