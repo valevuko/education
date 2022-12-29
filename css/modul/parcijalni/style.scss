@@ -15,3 +15,41 @@ body{
     position: relative;
     color: $bodycolor;  
 }
+div{
+    border: 2px;
+    width: 150px;
+    height: 150px;
+}
+@keyframes animacija1 {
+    0% {
+    }
+    100% {
+        background-color: $divone;
+        transform: translateY(150px);
+    }
+}
+div:nth-of-type(1) {
+    animation: animacija1 1.5s ease-out forwards;
+}
+@keyframes animacija2 {
+    0% {
+    }
+    100% {
+        background-color: $divtwo;
+        transform: translateY(150px);
+    }
+}
+div:nth-of-type(2) {
+    animation: animacija2 4.5s ease-out forwards;
+}
+@keyframes animacija3 {
+    0% {
+    }
+    100% {
+        background-color: $divthree;
+        transform: translateY(150px);
+    }
+}
+div:nth-of-type(3) {
+    animation: animacija3 6s ease-out forwards;
+}
