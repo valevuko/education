@@ -1,0 +1,15 @@
+$my-color: pink;
+header{
+    width: 500px;
+    background-color: black;
+    h1{
+        color: $my-color;
+    }
+}
+.flex-container{
+    display: flex;
+    .flex-item{ /*ili možemo staviti >* i onda sve ispod containera ide u taj stil*/
+        flex-basis: 25%;
+
+    }
+}

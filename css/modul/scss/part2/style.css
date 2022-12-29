@@ -1,0 +1,15 @@
+@charset "UTF-8";
+header {
+  width: 500px;
+  background-color: black;
+}
+header h1 {
+  color: pink;
+}
+
+.flex-container {
+  display: flex;
+}
+.flex-container .flex-item { /*ili možemo staviti >* i onda sve ispod containera ide u taj stil*/
+  flex-basis: 25%;
+}/*# sourceMappingURL=style.css.map */
