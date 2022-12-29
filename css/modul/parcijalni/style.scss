@@ -1,0 +1,17 @@
+@import "./base/colors";
+@import "./base/reset";
+@import "./abstracts/mixini";
+
+html,
+body{
+    background: url(blur-clean.jpg);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    color: $bodycolor;  
+}
