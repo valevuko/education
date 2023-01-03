@@ -1,0 +1,39 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*- pitati Davora zašto ne funkcionira 26:50min*/
+body {
+  background: rgb(22, 14, 14);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.main {
+  /*mixin se koristi za stil*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /*flexCenter($directiona) - u zagradi se nalazi ono što želimo: npr ako želimo u redovima stavimo colomn,
+  ako želimo u stupcima stavimo row*/
+  width: 80%;
+  margin: 0 auto;
+}
+.main .main_paragraph1, .main .main_paragraph2 { /*ako želimo da je isto roditelju stavimo znak ".main .main_paragraph1" - jednak roditelju i onda nastavimo s class*/
+  font-weight: weight bold;
+}
+.main .main_paragraph1:hover, .main .main_paragraph2:hover { /*hover -> kad dođemo pokazivačem na tekst promijeni boju */
+  color: pink;
+}
+.main .main_paragraph2:hover {
+  color: grey;
+}
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+@import 'config.scss';
+body{
+    background: black;
+    color: white;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
+h1, h2, h3{
+    font-weight: 400;
+}
+a{
+    color:white;
+    text-decoration: none;
+}

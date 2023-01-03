@@ -1,0 +1,67 @@
+@import './resets';
+@import './variables';
+
+
+@function width ($weight-name){ /*funkcije se koriste za izračun i vraćanje vrijednosti */
+    @return map-get($font-weights, $weight-name);
+/*funkcije služe kako bi smanjili broj linija a opet definirali točno ono što nam treba;
+u ovom primjeru odabrali smo kakav će nam font (Font-weights) biti s obzirom na bold, regular,...*/
+}
+
+@mixin flexCenter($directiona){ /*mixin se koristi za stil*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $directiona;
+/*flexCenter($directiona) - u zagradi se nalazi ono što želimo: npr ako želimo u redovima stavimo colomn,
+ako želimo u stupcima stavimo row*/
+}
+
+@mixin theme($light-theme) {
+    @if $light-theme {
+        background: $test-color;
+        color: darken ($text-color, 100%);
+    }
+} /*- pitati Davora zašto ne funkcionira 26:50min*/
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+body {
+    background: $primary-color;
+    color: $text-color;
+    font-weight: map-get($font-weights, bold);
+}
+
+.main 
+{
+    @include flexCenter(row);
+    width: 80%;
+    margin: 0 auto;
+
+        #{&}__paragraph1 {  /*ako želimo da je isto roditelju stavimo znak "#{&}" - jednak roditelju i onda nastavimo s class*/
+            font-weight: weight (bold);
+
+            &:hover{ /*hover -> kad dođemo pokazivačem na tekst promijeni boju */
+                color:pink;
+                }
+    }
+
+    #{&}__paragraph2 {
+        @extend #{&}__paragraph1;
+        &:hover { /*hover -> kad dođemo pokazivačem na tekst promijeni boju */
+            color:gray;
+            }
+
+    } /*ako želimo samo izmijeniti jedan dio stila*/
+    @include mobile(){
+        flex-direction: column;
+    }
+}
+
+.light {
+    @include theme(false);
+}
